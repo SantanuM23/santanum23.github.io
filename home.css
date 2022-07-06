@@ -20,6 +20,7 @@ html{
 	--elements: rgba(255,255,255,0.5);
 	--headings: rgba(255,255,255,0.8);
 	--border: rgba(255,255,255,1);
+	--timeline: rgba(255,255,255,1);
 	--navlink: rgba(0,0,0,1);
 	--navlinkhover: rgba(255,255,255,1);
 	--button: rgba(255,255,255,0.5);
@@ -42,6 +43,7 @@ html{
 	--elements: rgba(255,255,255,0.5);
 	--headings: rgba(0,0,0,0.8);
 	--border: rgba(255,255,255,1);
+	--timeline: #00FFBB;
 	--navlink: rgba(255,255,255,1);
 	--navlinkhover: #00FFBB;
 	--button: rgba(255,255,255,0.5);
@@ -352,6 +354,71 @@ body{
 .about_p{
 	font-size: 1.8rem;
 	color: var(--font);
+}
+/**********************Education section****************************/
+.education_container{
+	margin-top: 5rem;
+	min-height: 2rem;
+	overflow: hidden;
+	color: var(--font);
+}
+.education_column{
+	position: relative;
+	width: 33%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	min-height: 9rem;
+	overflow: hidden;
+}
+.box1::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	border-top: 2px solid var(--timeline);
+	top: 0.6rem;
+	right: 0;
+}
+.shift::before{
+	content: '';
+	position: absolute;
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 50%;
+	background-color: var(--timeline);
+	top: 0;
+}
+.box2::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	border-top: 2px solid var(--timeline);
+	top: 0.6rem;
+	right: 0;
+}
+.box3::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	border-top: 2px solid var(--timeline);
+	top: 0.6rem;
+	left: 0;
+}
+.shift{
+	width: 90%;
+	margin: 0rem auto;
+	margin-top: 3rem;
+	min-height: 13rem;
+	overflow: hidden;
+	background-color: var(--upglass);
+	border: 1px solid var(--border);
+	border-radius: 3rem;
+}
+.edu_h{
+	font-size: 1.3rem;
+}
+.edu_p{
+	font-size: 1.2rem;
 }
 /********************THIRD DIV-START**********************/
 #third_div{
