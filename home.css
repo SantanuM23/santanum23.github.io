@@ -370,49 +370,23 @@ body{
 	text-align: center;
 	min-height: 9rem;
 	overflow: hidden;
-}
-.box1::after{
-	content: '';
-	position: absolute;
-	width: 50%;
 	border-top: 2px solid var(--timeline);
-	top: 0.6rem;
-	right: 0;
 }
-.shift::before{
-	content: '';
+.point{
 	position: absolute;
 	height: 1.5rem;
 	width: 1.5rem;
-	border-radius: 50%;
+	transform: rotate(45deg);
 	background-color: var(--timeline);
-	top: 0;
-}
-.box2::after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	border-top: 2px solid var(--timeline);
-	top: 0.6rem;
-	right: 0;
-}
-.box3::after{
-	content: '';
-	position: absolute;
-	width: 50%;
-	border-top: 2px solid var(--timeline);
-	top: 0.6rem;
-	left: 0;
+	top: -0.8rem;
+	left: 47%;
 }
 .shift{
 	width: 90%;
 	margin: 0rem auto;
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 	min-height: 13rem;
 	overflow: hidden;
-	background-color: var(--upglass);
-	border: 1px solid var(--border);
-	border-radius: 3rem;
 }
 .edu_h{
 	font-size: 1.3rem;
@@ -713,9 +687,41 @@ form{
 	.active .mobile-navbar-btn .mobile-nav-icon[name='menu']{
 		display: none;
 	}
+	
+
 }
 
 /***********************************************RESPONSIVENESS********************************************************/
+@media(max-width: 1000px){
+.education_column{
+	position: relative;
+	width: 100%;
+	border-top: none;
+	border-left: 2px solid var(--timeline);
+}
+.point{
+	position: absolute;
+	height: 1.5rem;
+	width: 1.5rem;
+	transform: rotate(45deg);
+	background-color: var(--timeline);
+	left: -0.8rem;
+	top: 30%;
+}
+.shift{
+	width: 90%;
+	margin: 0rem auto;
+	margin-top: 1.5rem;
+	text-align: left;
+}
+.edu_h{
+	font-size: 13px;
+}
+.edu_p{
+	font-size: 12px;
+}
+}
+}
 @media(max-width:1024px){
 	html{
 		font-size: 55%;
