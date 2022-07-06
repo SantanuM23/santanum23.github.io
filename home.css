@@ -236,8 +236,8 @@ body{
 }
 .navbar{
 	position: absolute;
-	top: 7%;
-	right: 7%;
+	top: 6rem;
+	right: 11rem;
 	z-index: 1000;
 }
 .nav_li{
